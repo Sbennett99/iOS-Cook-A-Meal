@@ -19,6 +19,7 @@
 		3FB49DCF280B934200AF958D /* iOS_Group_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DCE280B934200AF958D /* iOS_Group_ProjectTests.swift */; };
 		3FB49DD9280B934200AF958D /* iOS_Group_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DD8280B934200AF958D /* iOS_Group_ProjectUITests.swift */; };
 		3FB49DDB280B934200AF958D /* iOS_Group_ProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DDA280B934200AF958D /* iOS_Group_ProjectUITestsLaunchTests.swift */; };
+		3FB49DE8281733CA00AF958D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DE7281733CA00AF958D /* Models.swift */; };
 		658300512811FA770055EE26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 658300502811FA770055EE26 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		3FB49DD4280B934200AF958D /* iOS-Group-ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-Group-ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB49DD8280B934200AF958D /* iOS_Group_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Group_ProjectUITests.swift; sourceTree = "<group>"; };
 		3FB49DDA280B934200AF958D /* iOS_Group_ProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Group_ProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3FB49DE7281733CA00AF958D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		658300502811FA770055EE26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 				3FB49DC2280B934200AF958D /* LaunchScreen.storyboard */,
 				6583004F2811F9B60055EE26 /* AssetsFolder */,
 				3FB49DBD280B933A00AF958D /* iOS_Group_Project.xcdatamodeld */,
+				3FB49DE7281733CA00AF958D /* Models.swift */,
 			);
 			path = "iOS-Group-Project";
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				3F54FAF62811E8C0001E90A8 /* RegisterVC.swift in Sources */,
 				3FB49DBF280B933A00AF958D /* iOS_Group_Project.xcdatamodeld in Sources */,
 				3F54FAF42811E8A8001E90A8 /* LoginVC.swift in Sources */,
+				3FB49DE8281733CA00AF958D /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
