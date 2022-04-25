@@ -163,7 +163,7 @@
         <!--Featured-->
         <scene sceneID="QEI-6E-fAq">
             <objects>
-                <viewController title="Featured" id="7Kz-KZ-AO7" sceneMemberID="viewController">
+                <viewController title="Featured" id="7Kz-KZ-AO7" customClass="FeaturedPageVC" customModule="iOS_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MXl-rv-c7l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,6 +202,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="SWI-Jv-azC"/>
                     <connections>
+                        <outlet property="FPImg1" destination="IDL-nf-SWP" id="qU0-L0-xqF"/>
+                        <outlet property="FPImg2" destination="9lq-8x-6fO" id="cF5-oG-NMu"/>
+                        <outlet property="FPImg3" destination="Qc0-iP-i09" id="faF-KJ-TrH"/>
+                        <outlet property="FPImg4" destination="Yhh-lg-drY" id="IS9-rc-Udf"/>
+                        <outlet property="FPImg5" destination="Wjb-O3-mV5" id="qMn-VI-QLQ"/>
+                        <outlet property="FPImg6" destination="ZH9-RK-eLC" id="wVb-tF-RcQ"/>
+                        <outlet property="FPImg7" destination="CJK-dm-xaM" id="ook-RV-hkh"/>
                         <segue destination="VMR-lH-3iV" kind="show" id="Vme-lw-Lg8"/>
                     </connections>
                 </viewController>
@@ -212,7 +219,7 @@
         <!--DetailedShoe-->
         <scene sceneID="5nj-rz-APC">
             <objects>
-                <viewController title="DetailedShoe" id="VMR-lH-3iV" sceneMemberID="viewController">
+                <viewController title="DetailedShoe" id="VMR-lH-3iV" customClass="DetailShoeVC" customModule="iOS_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="24h-x8-4RR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -263,11 +270,62 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKw-gB-LCM">
+                                <rect key="frame" x="253" y="379" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8b-V0-Gs8">
+                                <rect key="frame" x="253" y="438" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tea-0s-VRM">
+                                <rect key="frame" x="246" y="488" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwI-GD-taX">
+                                <rect key="frame" x="246" y="538" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8G-7t-5W4">
+                                <rect key="frame" x="246" y="608" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WtK-M9-hnS">
+                                <rect key="frame" x="246" y="685" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Asv-cT-3oI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="YLT-L3-JPb"/>
+                    <connections>
+                        <outlet property="deatishoeyear" destination="WtK-M9-hnS" id="1mU-4V-Q1f"/>
+                        <outlet property="detailshoeBrand" destination="U8b-V0-Gs8" id="Qxr-zy-zGM"/>
+                        <outlet property="detailshoeImgView" destination="ISr-gh-quh" id="F3d-cE-xTG"/>
+                        <outlet property="detailshoeName" destination="rKw-gB-LCM" id="mdW-O8-x1Q"/>
+                        <outlet property="detailshoecolor" destination="Tea-0s-VRM" id="F7W-Zi-NiI"/>
+                        <outlet property="detailshoeprice" destination="wwI-GD-taX" id="5kE-11-ksT"/>
+                        <outlet property="detailshoesites" destination="n8G-7t-5W4" id="YXv-bH-Jhm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ege-Vx-eab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -276,7 +334,7 @@
         <!--UserDetail-->
         <scene sceneID="W3v-YR-PD6">
             <objects>
-                <viewController title="UserDetail" id="KRd-ca-6Wn" sceneMemberID="viewController">
+                <viewController title="UserDetail" id="KRd-ca-6Wn" customClass="UserVC" customModule="iOS_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DLr-wn-2pp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -353,7 +411,6 @@
                                         <connections>
                                             <outlet property="articlesciencecontent" destination="MJd-Pu-lrd" id="Alj-ek-dpi"/>
                                             <outlet property="sciautherlable" destination="ulQ-1n-Q9H" id="KOs-nH-oOB"/>
-                                            <outlet property="scienceimageview" destination="49z-T9-MAC" id="IhB-Ex-EIZ"/>
                                             <outlet property="sititlelable" destination="CR8-nV-U5p" id="g8n-FL-BZg"/>
                                         </connections>
                                     </tableViewCell>
@@ -393,6 +450,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="irh-pe-tKc"/>
                     <connections>
+                        <outlet property="UserDP" destination="Uax-9g-hLz" id="gMK-TJ-ZmV"/>
+                        <outlet property="userBioTextField" destination="J6A-9I-88f" id="eEe-0j-Esx"/>
+                        <outlet property="userEmailID" destination="2TK-qo-Iaz" id="bKj-WU-gN1"/>
+                        <outlet property="userFN" destination="QKE-Gh-8Vx" id="Rxx-Xm-qQN"/>
+                        <outlet property="userFavImage" destination="49z-T9-MAC" id="qaL-cc-gaO"/>
+                        <outlet property="userFavShoeBrandName" destination="MJd-Pu-lrd" id="Zhf-nF-Sqj"/>
+                        <outlet property="userFavShoeColor" destination="ulQ-1n-Q9H" id="Vg7-Zg-5qm"/>
+                        <outlet property="userFavShoeName" destination="CR8-nV-U5p" id="1e2-Sx-XMp"/>
+                        <outlet property="userID" destination="cha-r7-Ra3" id="r8Z-Y3-XpN"/>
+                        <outlet property="userLN" destination="RQC-s9-5Fn" id="gUQ-dO-hLe"/>
                         <segue destination="VMR-lH-3iV" kind="show" identifier="UserDetail" id="WaS-pS-bH3"/>
                     </connections>
                 </viewController>
@@ -403,13 +470,13 @@
         <!--Search-->
         <scene sceneID="OBW-lg-4d4">
             <objects>
-                <viewController title="Search" id="52X-Go-zrJ" sceneMemberID="viewController">
+                <viewController title="Search" id="52X-Go-zrJ" customClass="SearchVC" customModule="iOS_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9aw-10-Q90">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sarch Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfa-Q7-I4u">
-                                <rect key="frame" x="134" y="205" width="215" height="37"/>
+                                <rect key="frame" x="134" y="205" width="108" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -420,48 +487,72 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="searchField:" destination="52X-Go-zrJ" eventType="editingDidEnd" id="tcf-a7-dgH"/>
+                                </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNo-OJ-NK5">
-                                <rect key="frame" x="297" y="145" width="69" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Search"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLf-VC-TRD">
                                 <rect key="frame" x="61" y="336" width="53" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Nike"/>
+                                <connections>
+                                    <action selector="SearchNike:" destination="52X-Go-zrJ" eventType="touchUpInside" id="5vs-57-jPp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mv2-48-qK6">
                                 <rect key="frame" x="49" y="403" width="77" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Adiddas"/>
+                                <connections>
+                                    <action selector="searchAdiddas:" destination="52X-Go-zrJ" eventType="touchUpInside" id="Udc-M6-he1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEI-Bs-k29">
                                 <rect key="frame" x="57" y="485" width="61" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Puma"/>
+                                <connections>
+                                    <action selector="searchPuma:" destination="52X-Go-zrJ" eventType="touchUpInside" id="34A-0j-wDN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3a-ac-6DH">
                                 <rect key="frame" x="236" y="336" width="77" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Running"/>
+                                <connections>
+                                    <action selector="searchRunning:" destination="52X-Go-zrJ" eventType="touchUpInside" id="AEH-7s-ubf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pd2-xx-e7E">
                                 <rect key="frame" x="242" y="403" width="65" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Hiking"/>
+                                <connections>
+                                    <action selector="searchHiking:" destination="52X-Go-zrJ" eventType="touchUpInside" id="sLi-uS-dFn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZ3-FE-mf2">
                                 <rect key="frame" x="237" y="485" width="76" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="workout"/>
+                                <connections>
+                                    <action selector="searchWorkout:" destination="52X-Go-zrJ" eventType="touchUpInside" id="shA-1X-TCl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNo-OJ-NK5">
+                                <rect key="frame" x="297" y="145" width="69" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Search"/>
+                                <connections>
+                                    <action selector="SearchButton:" destination="52X-Go-zrJ" eventType="touchUpInside" id="DWv-vO-WfE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tKr-S4-Tuw"/>
@@ -469,17 +560,18 @@
                     </view>
                     <navigationItem key="navigationItem" id="LYF-9A-rOj"/>
                     <connections>
+                        <outlet property="searchFilterLabel" destination="Kfa-Q7-I4u" id="WuH-Mx-qEy"/>
                         <segue destination="CPZ-OT-p8q" kind="show" identifier="SearchSHow" id="uwn-ou-AFb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5pm-aw-HDa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2201" y="2496"/>
+            <point key="canvasLocation" x="2200" y="2495.7589285714284"/>
         </scene>
         <!--SearchDetail-->
         <scene sceneID="oa9-z5-bZc">
             <objects>
-                <viewController title="SearchDetail" id="CPZ-OT-p8q" sceneMemberID="viewController">
+                <viewController title="SearchDetail" id="CPZ-OT-p8q" customClass="SearchDetailVC" customModule="iOS_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LDU-5u-hxs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -555,6 +647,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="Xya-kx-imI"/>
                     <connections>
+                        <outlet property="searchDeatailName" destination="nyq-Lq-Hwk" id="8Mw-zj-h3z"/>
+                        <outlet property="searchDetailBrand" destination="n9y-Y6-DUs" id="MN7-Sc-m3j"/>
+                        <outlet property="searchDetailColor" destination="nVG-LG-rHy" id="BWK-u1-BLW"/>
+                        <outlet property="searchDetailImgview" destination="DpA-3W-4u1" id="dU9-2o-mLu"/>
                         <segue destination="VMR-lH-3iV" kind="show" identifier="SearchDetailShow" id="ejk-tZ-lDZ"/>
                     </connections>
                 </viewController>
@@ -691,7 +787,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="wQG-6s-PVV"/>
-        <segue reference="WaS-pS-bH3"/>
+        <segue reference="ejk-tZ-lDZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="adiddas" width="112.5" height="112.5"/>

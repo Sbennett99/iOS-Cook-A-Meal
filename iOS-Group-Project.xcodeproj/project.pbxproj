@@ -21,6 +21,11 @@
 		3FB49DDB280B934200AF958D /* iOS_Group_ProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DDA280B934200AF958D /* iOS_Group_ProjectUITestsLaunchTests.swift */; };
 		3FB49DE8281733CA00AF958D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DE7281733CA00AF958D /* Models.swift */; };
 		658300512811FA770055EE26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 658300502811FA770055EE26 /* GoogleService-Info.plist */; };
+		D40CB5C928173CCF0045DC58 /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CB5C828173CCF0045DC58 /* UserVC.swift */; };
+		D40CB5CB28173E2A0045DC58 /* FeaturedPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CB5CA28173E2A0045DC58 /* FeaturedPageVC.swift */; };
+		D40CB5CD28173FD60045DC58 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CB5CC28173FD60045DC58 /* SearchVC.swift */; };
+		D40CB5CF281741080045DC58 /* SearchDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CB5CE281741080045DC58 /* SearchDetailVC.swift */; };
+		D40CB5D1281741930045DC58 /* DetailShoeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CB5D0281741930045DC58 /* DetailShoeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		3FB49DDA280B934200AF958D /* iOS_Group_ProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Group_ProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3FB49DE7281733CA00AF958D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		658300502811FA770055EE26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D40CB5C828173CCF0045DC58 /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
+		D40CB5CA28173E2A0045DC58 /* FeaturedPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPageVC.swift; sourceTree = "<group>"; };
+		D40CB5CC28173FD60045DC58 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		D40CB5CE281741080045DC58 /* SearchDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailVC.swift; sourceTree = "<group>"; };
+		D40CB5D0281741930045DC58 /* DetailShoeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailShoeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +132,11 @@
 				6583004F2811F9B60055EE26 /* AssetsFolder */,
 				3FB49DBD280B933A00AF958D /* iOS_Group_Project.xcdatamodeld */,
 				3FB49DE7281733CA00AF958D /* Models.swift */,
+				D40CB5C828173CCF0045DC58 /* UserVC.swift */,
+				D40CB5CA28173E2A0045DC58 /* FeaturedPageVC.swift */,
+				D40CB5CC28173FD60045DC58 /* SearchVC.swift */,
+				D40CB5CE281741080045DC58 /* SearchDetailVC.swift */,
+				D40CB5D0281741930045DC58 /* DetailShoeVC.swift */,
 			);
 			path = "iOS-Group-Project";
 			sourceTree = "<group>";
@@ -289,10 +304,15 @@
 				3FB49DB9280B933A00AF958D /* ViewController.swift in Sources */,
 				3FB49DB5280B933A00AF958D /* AppDelegate.swift in Sources */,
 				3FB49DB7280B933A00AF958D /* SceneDelegate.swift in Sources */,
+				D40CB5CF281741080045DC58 /* SearchDetailVC.swift in Sources */,
+				D40CB5D1281741930045DC58 /* DetailShoeVC.swift in Sources */,
 				3F54FAF62811E8C0001E90A8 /* RegisterVC.swift in Sources */,
 				3FB49DBF280B933A00AF958D /* iOS_Group_Project.xcdatamodeld in Sources */,
 				3F54FAF42811E8A8001E90A8 /* LoginVC.swift in Sources */,
+				D40CB5CD28173FD60045DC58 /* SearchVC.swift in Sources */,
 				3FB49DE8281733CA00AF958D /* Models.swift in Sources */,
+				D40CB5C928173CCF0045DC58 /* UserVC.swift in Sources */,
+				D40CB5CB28173E2A0045DC58 /* FeaturedPageVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
