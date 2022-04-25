@@ -16,17 +16,9 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var registerPassTF: UITextField!
     
     @IBAction func registerBtn(_ sender: UIButton) {
-        if let email = registerNameTF.text, let password = registerPassTF.text{
-            Auth.auth().createUser(withEmail: email, password: password){ authResult, error in
-                if let err = error {
-                    self.errorDisplay.text = err.localizedDescription
-        }
-                else{
-                    self.performSegue(withIdentifier: "registerToTab", sender: self)
-                }
         
     }
-}
+
     
     
 
@@ -40,5 +32,5 @@ class RegisterVC: UIViewController {
     }
     */
 
-}
+
 }
