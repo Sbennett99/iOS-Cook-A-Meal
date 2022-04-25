@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IyD-8i-KfP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IyD-8i-KfP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--LoginVC-->
+        <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="iOS_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login" id="BYZ-38-t0r" customClass="LoginVC" customModule="iOS_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,10 +103,13 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="KRd-ca-6Wn" kind="relationship" relationship="rootViewController" id="bne-e9-xak"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sTS-Ca-Cug" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-106" y="1738"/>
+            <point key="canvasLocation" x="-36" y="1699"/>
         </scene>
         <!--Featured-->
         <scene sceneID="Utp-xN-VcD">
@@ -125,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="1075" y="1699"/>
         </scene>
-        <!--View Controller-->
+        <!--Featured-->
         <scene sceneID="QEI-6E-fAq">
             <objects>
-                <viewController id="7Kz-KZ-AO7" sceneMemberID="viewController">
+                <viewController title="Featured" id="7Kz-KZ-AO7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MXl-rv-c7l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,17 +170,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="SWI-Jv-azC"/>
                     <connections>
-                        <segue destination="52X-Go-zrJ" kind="show" id="CKC-zU-Dz8"/>
+                        <segue destination="VMR-lH-3iV" kind="show" id="Vme-lw-Lg8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ALh-4P-YCG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1074" y="2496"/>
         </scene>
-        <!--View Controller-->
+        <!--DetailedShoe-->
         <scene sceneID="5nj-rz-APC">
             <objects>
-                <viewController id="VMR-lH-3iV" sceneMemberID="viewController">
+                <viewController title="DetailedShoe" id="VMR-lH-3iV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="24h-x8-4RR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,15 +235,16 @@
                         <viewLayoutGuide key="safeArea" id="Asv-cT-3oI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="YLT-L3-JPb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ege-Vx-eab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1979.7101449275365" y="2495.7589285714284"/>
+            <point key="canvasLocation" x="1043" y="3335"/>
         </scene>
-        <!--View Controller-->
+        <!--UserDetail-->
         <scene sceneID="W3v-YR-PD6">
             <objects>
-                <viewController id="KRd-ca-6Wn" sceneMemberID="viewController">
+                <viewController title="UserDetail" id="KRd-ca-6Wn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DLr-wn-2pp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -263,7 +267,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="Ejc-b4-TNi" customClass="EngfourScienceCellTVC" customModule="Nomula_NewsAPI" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="Ejc-b4-TNi" customClass="EngfourScienceCellTVC" customModule="iOS_Group_Project" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="285" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ejc-b4-TNi" id="1aX-0t-eHX">
@@ -355,15 +359,19 @@
                         <viewLayoutGuide key="safeArea" id="AlN-bA-BA6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="irh-pe-tKc"/>
+                    <connections>
+                        <segue destination="VMR-lH-3iV" kind="show" identifier="UserDetail" id="WaS-pS-bH3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CjT-cJ-Hik" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-85.507246376811594" y="2551.3392857142858"/>
+            <point key="canvasLocation" x="-36" y="2496"/>
         </scene>
-        <!--View Controller-->
+        <!--Search-->
         <scene sceneID="OBW-lg-4d4">
             <objects>
-                <viewController id="52X-Go-zrJ" sceneMemberID="viewController">
+                <viewController title="Search" id="52X-Go-zrJ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9aw-10-Q90">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -428,15 +436,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="LYF-9A-rOj"/>
+                    <connections>
+                        <segue destination="CPZ-OT-p8q" kind="show" identifier="SearchSHow" id="uwn-ou-AFb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5pm-aw-HDa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912" y="3194"/>
+            <point key="canvasLocation" x="2201" y="2496"/>
         </scene>
-        <!--View Controller-->
+        <!--SearchDetail-->
         <scene sceneID="oa9-z5-bZc">
             <objects>
-                <viewController id="CPZ-OT-p8q" sceneMemberID="viewController">
+                <viewController title="SearchDetail" id="CPZ-OT-p8q" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LDU-5u-hxs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -446,7 +457,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="sjo-zE-qkJ" customClass="EngfourScienceCellTVC" customModule="Nomula_NewsAPI" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="sjo-zE-qkJ" customClass="EngfourScienceCellTVC" customModule="iOS_Group_Project" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="388" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sjo-zE-qkJ" id="PQg-R0-0dm">
@@ -510,10 +521,14 @@
                         <viewLayoutGuide key="safeArea" id="FKm-NB-k5O"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Xya-kx-imI"/>
+                    <connections>
+                        <segue destination="VMR-lH-3iV" kind="show" identifier="SearchDetailShow" id="ejk-tZ-lDZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yaa-kb-gf4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1730" y="3257"/>
+            <point key="canvasLocation" x="2271" y="3335"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Srg-iV-eqg">
@@ -534,7 +549,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fuH-Nd-niG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1207" y="953"/>
+            <point key="canvasLocation" x="1074" y="927"/>
         </scene>
         <!--Search-->
         <scene sceneID="wxM-bf-cwg">
@@ -545,15 +560,18 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="52X-Go-zrJ" kind="relationship" relationship="rootViewController" id="xbe-9D-ScO"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s4a-pq-tOu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2041" y="1675"/>
+            <point key="canvasLocation" x="2165" y="1699"/>
         </scene>
         <!--RegisterViewController-->
         <scene sceneID="WKc-LU-zwS">
             <objects>
-                <viewController id="za4-Nb-EFl" userLabel="RegisterViewController" customClass="RegisterVC" customModule="iOS_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Register" id="za4-Nb-EFl" userLabel="RegisterViewController" customClass="RegisterVC" customModule="iOS_Group_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cUh-WW-vzj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -640,7 +658,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vFw-VH-Gsb"/>
+        <segue reference="wQG-6s-PVV"/>
+        <segue reference="WaS-pS-bH3"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="adiddas" width="112.5" height="112.5"/>
