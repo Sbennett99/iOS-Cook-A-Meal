@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Firebase
 
 class LoginVC: UIViewController {
     
@@ -18,16 +17,7 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passwordTF: UITextField!
     
     @IBAction func LoginPressed(_ sender: UIButton) {
-        if let userName = usernameTF.text, let pswd = passwordTF.text{
-        Auth.auth().signIn(withEmail: userName, password: pswd){
-            [weak self] authResult, error in
-            if let e = error{
-            }
-            else{
-                self?.performSegue(withIdentifier: "loginToTab" , sender: self)
-            }
-            }
-        }
+        
     }
     
     
