@@ -119,6 +119,12 @@
 		3FB49DB3280B933A00AF958D /* iOS-Group-Project */ = {
 			isa = PBXGroup;
 			children = (
+				3FB49DE7281733CA00AF958D /* Models.swift */,
+				D40CB5C828173CCF0045DC58 /* UserVC.swift */,
+				D40CB5CA28173E2A0045DC58 /* FeaturedPageVC.swift */,
+				D40CB5CC28173FD60045DC58 /* SearchVC.swift */,
+				D40CB5CE281741080045DC58 /* SearchDetailVC.swift */,
+				D40CB5D0281741930045DC58 /* DetailShoeVC.swift */,
 				3FB49DB4280B933A00AF958D /* AppDelegate.swift */,
 				3FB49DB6280B933A00AF958D /* SceneDelegate.swift */,
 				3FB49DB8280B933A00AF958D /* ViewController.swift */,
@@ -131,12 +137,6 @@
 				3FB49DC2280B934200AF958D /* LaunchScreen.storyboard */,
 				6583004F2811F9B60055EE26 /* AssetsFolder */,
 				3FB49DBD280B933A00AF958D /* iOS_Group_Project.xcdatamodeld */,
-				3FB49DE7281733CA00AF958D /* Models.swift */,
-				D40CB5C828173CCF0045DC58 /* UserVC.swift */,
-				D40CB5CA28173E2A0045DC58 /* FeaturedPageVC.swift */,
-				D40CB5CC28173FD60045DC58 /* SearchVC.swift */,
-				D40CB5CE281741080045DC58 /* SearchDetailVC.swift */,
-				D40CB5D0281741930045DC58 /* DetailShoeVC.swift */,
 			);
 			path = "iOS-Group-Project";
 			sourceTree = "<group>";
