@@ -1,4 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G80" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Color" representedClassName="Color" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="color" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Shoe" inverseName="colors" inverseEntity="Shoe"/>
+    </entity>
+    <entity name="PurchaseURL" representedClassName="PurchaseURL" syncable="YES" codeGenerationType="class">
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="purl" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Shoe" inverseName="purls" inverseEntity="Shoe"/>
+    </entity>
+    <entity name="Shoe" representedClassName=".Shoe" syncable="YES" codeGenerationType="class">
+        <attribute name="brand" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="price" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="purchaseURLs" optional="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="colors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Color" inverseName="color" inverseEntity="Color"/>
+        <relationship name="purls" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PurchaseURL" inverseName="purl" inverseEntity="PurchaseURL"/>
+        <relationship name="shoe" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="shoes" inverseEntity="User"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="bio" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <relationship name="shoes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Shoe" inverseName="shoe" inverseEntity="Shoe"/>
+    </entity>
+    <elements>
+        <element name="Shoe" positionX="-2577.248901367188" positionY="432.4808959960938" width="128" height="178"/>
+        <element name="User" positionX="-2246.879821777344" positionY="393.7342529296875" width="128" height="163"/>
+        <element name="Color" positionX="-2815.292053222656" positionY="547.7788696289062" width="128" height="73"/>
+        <element name="PurchaseURL" positionX="-2582.615661621094" positionY="249.1334533691406" width="128" height="73"/>
+    </elements>
 </model>
