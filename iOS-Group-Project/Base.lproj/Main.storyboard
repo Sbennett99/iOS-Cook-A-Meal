@@ -610,19 +610,19 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gf0-wn-ZSB">
                                 <rect key="frame" x="10" y="98" width="394" height="656"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="qx2-QX-c9s">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qx2-QX-c9s">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="74"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N5i-Dz-6E9">
-                                                <rect key="frame" x="0.0" y="0.0" width="298" height="74"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N5i-Dz-6E9">
+                                                <rect key="frame" x="0.0" y="0.0" width="309" height="74"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
                                                     <action selector="searchField:" destination="52X-Go-zrJ" eventType="editingDidEnd" id="tcf-a7-dgH"/>
                                                 </connections>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNo-OJ-NK5">
-                                                <rect key="frame" x="325" y="0.0" width="69" height="74"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNo-OJ-NK5">
+                                                <rect key="frame" x="317" y="0.0" width="77" height="74"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Search"/>
                                                 <connections>
@@ -630,6 +630,9 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="CNo-OJ-NK5" firstAttribute="width" secondItem="N5i-Dz-6E9" secondAttribute="width" multiplier="0.25" id="Rrl-Zv-7qc"/>
+                                        </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Filters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfa-Q7-I4u">
                                         <rect key="frame" x="0.0" y="82" width="394" height="74"/>
