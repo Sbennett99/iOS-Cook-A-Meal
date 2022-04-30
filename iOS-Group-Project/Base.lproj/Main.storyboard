@@ -67,7 +67,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="LoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YDt-hk-y2O"/>
-                                            <segue destination="vzZ-sI-tL3" kind="show" identifier="loginToTab" id="wQG-6s-PVV"/>
+                                            <segue destination="vzZ-sI-tL3" kind="show" identifier="Login" id="wQG-6s-PVV"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xXy-Gk-jah">
@@ -85,7 +85,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Signup"/>
                                                 <connections>
-                                                    <segue destination="za4-Nb-EFl" kind="show" id="40q-m0-LAW"/>
+                                                    <segue destination="za4-Nb-EFl" kind="show" identifier="Register" id="40q-m0-LAW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -236,7 +236,7 @@
                         <outlet property="FPImg5" destination="Wjb-O3-mV5" id="qMn-VI-QLQ"/>
                         <outlet property="FPImg6" destination="ZH9-RK-eLC" id="wVb-tF-RcQ"/>
                         <outlet property="FPImg7" destination="CJK-dm-xaM" id="ook-RV-hkh"/>
-                        <segue destination="VMR-lH-3iV" kind="show" id="Vme-lw-Lg8"/>
+                        <segue destination="VMR-lH-3iV" kind="show" identifier="Detail" id="Vme-lw-Lg8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ALh-4P-YCG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -542,11 +542,6 @@
                                                         <constraint firstItem="CR8-nV-U5p" firstAttribute="top" secondItem="49z-T9-MAC" secondAttribute="top" id="vwT-rx-vWh"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
-                                                <connections>
-                                                    <outlet property="articlesciencecontent" destination="MJd-Pu-lrd" id="Alj-ek-dpi"/>
-                                                    <outlet property="sciautherlable" destination="ulQ-1n-Q9H" id="KOs-nH-oOB"/>
-                                                    <outlet property="sititlelable" destination="CR8-nV-U5p" id="g8n-FL-BZg"/>
-                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -571,7 +566,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="irh-pe-tKc">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="oC7-qH-0IL">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="oC7-qH-0IL">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Eb2-kV-ji8">
                                 <rect key="frame" x="20" y="0.0" width="374" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -586,13 +581,9 @@
                         <outlet property="userBioTextField" destination="J6A-9I-88f" id="eEe-0j-Esx"/>
                         <outlet property="userEmailID" destination="2TK-qo-Iaz" id="bKj-WU-gN1"/>
                         <outlet property="userFN" destination="QKE-Gh-8Vx" id="Rxx-Xm-qQN"/>
-                        <outlet property="userFavImage" destination="49z-T9-MAC" id="qaL-cc-gaO"/>
-                        <outlet property="userFavShoeBrandName" destination="MJd-Pu-lrd" id="Zhf-nF-Sqj"/>
-                        <outlet property="userFavShoeColor" destination="ulQ-1n-Q9H" id="Vg7-Zg-5qm"/>
-                        <outlet property="userFavShoeName" destination="CR8-nV-U5p" id="1e2-Sx-XMp"/>
                         <outlet property="userID" destination="cha-r7-Ra3" id="r8Z-Y3-XpN"/>
                         <outlet property="userLN" destination="RQC-s9-5Fn" id="gUQ-dO-hLe"/>
-                        <segue destination="VMR-lH-3iV" kind="show" identifier="UserDetail" id="WaS-pS-bH3"/>
+                        <segue destination="VMR-lH-3iV" kind="show" identifier="Detail" id="WaS-pS-bH3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CjT-cJ-Hik" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -789,7 +780,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LYF-9A-rOj">
-                        <barButtonItem key="rightBarButtonItem" title="✚" style="plain" id="Kw6-Iz-fJu">
+                        <barButtonItem key="rightBarButtonItem" title="✚" style="done" id="Kw6-Iz-fJu">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="P3i-sb-ZuS">
                                 <rect key="frame" x="302" y="5" width="92" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -800,7 +791,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="searchFilterLabel" destination="Kfa-Q7-I4u" id="WuH-Mx-qEy"/>
-                        <segue destination="CPZ-OT-p8q" kind="show" identifier="SearchSHow" id="uwn-ou-AFb"/>
+                        <segue destination="CPZ-OT-p8q" kind="show" identifier="SearchDetail" id="uwn-ou-AFb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5pm-aw-HDa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -870,12 +861,6 @@
                                                 <constraint firstItem="nVG-LG-rHy" firstAttribute="height" secondItem="nyq-Lq-Hwk" secondAttribute="height" id="y7F-o4-nrI"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="articlesciencecontent" destination="n9y-Y6-DUs" id="et5-wI-kVQ"/>
-                                            <outlet property="sciautherlable" destination="nVG-LG-rHy" id="hZT-Uo-mIO"/>
-                                            <outlet property="scienceimageview" destination="DpA-3W-4u1" id="bWA-RV-A4y"/>
-                                            <outlet property="sititlelable" destination="nyq-Lq-Hwk" id="FyA-VC-b02"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -892,11 +877,7 @@
                     <navigationItem key="navigationItem" id="Xya-kx-imI"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="searchDeatailName" destination="nyq-Lq-Hwk" id="8Mw-zj-h3z"/>
-                        <outlet property="searchDetailBrand" destination="n9y-Y6-DUs" id="MN7-Sc-m3j"/>
-                        <outlet property="searchDetailColor" destination="nVG-LG-rHy" id="BWK-u1-BLW"/>
-                        <outlet property="searchDetailImgview" destination="DpA-3W-4u1" id="dU9-2o-mLu"/>
-                        <segue destination="VMR-lH-3iV" kind="show" identifier="SearchDetailShow" id="ejk-tZ-lDZ"/>
+                        <segue destination="VMR-lH-3iV" kind="show" identifier="Detail" id="ejk-tZ-lDZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yaa-kb-gf4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1123,7 +1104,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="registerBtn:" destination="za4-Nb-EFl" eventType="touchUpInside" id="bpi-GH-EmD"/>
-                                            <segue destination="vzZ-sI-tL3" kind="show" identifier="registerToTab" id="vFw-VH-Gsb"/>
+                                            <segue destination="vzZ-sI-tL3" kind="show" identifier="RegisterComplete" id="vFw-VH-Gsb"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhq-Gu-Udf">
@@ -1203,7 +1184,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="vFw-VH-Gsb"/>
-        <segue reference="ejk-tZ-lDZ"/>
+        <segue reference="WaS-pS-bH3"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="adiddas" width="112.5" height="112.5"/>

@@ -16,17 +16,11 @@ class SearchDetailVC: UIViewController {
     }
     
     
-    @IBOutlet weak var searchDetailImgview: UIImageView!
+
     
     
-    @IBOutlet weak var searchDeatailName: UILabel!
     
-    
-    @IBOutlet weak var searchDetailBrand: UILabel!
-    
-    @IBOutlet weak var searchDetailColor: UILabel!
-    
-    /*
+   
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -34,6 +28,6 @@ class SearchDetailVC: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

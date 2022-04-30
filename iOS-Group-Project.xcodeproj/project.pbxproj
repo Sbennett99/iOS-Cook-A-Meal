@@ -19,6 +19,7 @@
 		3FB49DD9280B934200AF958D /* iOS_Group_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DD8280B934200AF958D /* iOS_Group_ProjectUITests.swift */; };
 		3FB49DDB280B934200AF958D /* iOS_Group_ProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DDA280B934200AF958D /* iOS_Group_ProjectUITestsLaunchTests.swift */; };
 		3FB49DE8281733CA00AF958D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DE7281733CA00AF958D /* Models.swift */; };
+		3FB49DED281CC76900AF958D /* iOS_Group_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DEB281CC76900AF958D /* iOS_Group_Project.xcdatamodeld */; };
 		D40CB5C928173CCF0045DC58 /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CB5C828173CCF0045DC58 /* UserVC.swift */; };
 		D40CB5CB28173E2A0045DC58 /* FeaturedPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CB5CA28173E2A0045DC58 /* FeaturedPageVC.swift */; };
 		D40CB5CD28173FD60045DC58 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CB5CC28173FD60045DC58 /* SearchVC.swift */; };
@@ -59,6 +60,8 @@
 		3FB49DD8280B934200AF958D /* iOS_Group_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Group_ProjectUITests.swift; sourceTree = "<group>"; };
 		3FB49DDA280B934200AF958D /* iOS_Group_ProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Group_ProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3FB49DE7281733CA00AF958D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		3FB49DE9281CC37000AF958D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FB49DEC281CC76900AF958D /* iOS_Group_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_Group_Project.xcdatamodel; sourceTree = "<group>"; };
 		D40CB5C828173CCF0045DC58 /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
 		D40CB5CA28173E2A0045DC58 /* FeaturedPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPageVC.swift; sourceTree = "<group>"; };
 		D40CB5CC28173FD60045DC58 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 		6583004F2811F9B60055EE26 /* AssetsFolder */ = {
 			isa = PBXGroup;
 			children = (
+				3FB49DEB281CC76900AF958D /* iOS_Group_Project.xcdatamodeld */,
+				3FB49DE9281CC37000AF958D /* Info.plist */,
 			);
 			path = AssetsFolder;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				D40CB5D1281741930045DC58 /* DetailShoeVC.swift in Sources */,
 				3F54FAF62811E8C0001E90A8 /* RegisterVC.swift in Sources */,
 				3F54FAF42811E8A8001E90A8 /* LoginVC.swift in Sources */,
+				3FB49DED281CC76900AF958D /* iOS_Group_Project.xcdatamodeld in Sources */,
 				D40CB5CD28173FD60045DC58 /* SearchVC.swift in Sources */,
 				3FB49DE8281733CA00AF958D /* Models.swift in Sources */,
 				D40CB5C928173CCF0045DC58 /* UserVC.swift in Sources */,
@@ -483,7 +489,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 552YHUUWHJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS-Group-Project/Info.plist";
+				INFOPLIST_FILE = "/Users/student/Downloads/iOS-Group-Project/iOS-Group-Project/AssetsFolder/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "iOS-Group-Project";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -512,7 +518,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 552YHUUWHJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS-Group-Project/Info.plist";
+				INFOPLIST_FILE = "/Users/student/Downloads/iOS-Group-Project/iOS-Group-Project/AssetsFolder/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "iOS-Group-Project";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -648,6 +654,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3FB49DEB281CC76900AF958D /* iOS_Group_Project.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3FB49DEC281CC76900AF958D /* iOS_Group_Project.xcdatamodel */,
+			);
+			currentVersion = 3FB49DEC281CC76900AF958D /* iOS_Group_Project.xcdatamodel */;
+			path = iOS_Group_Project.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3FB49DA9280B933900AF958D /* Project object */;
 }
