@@ -39,5 +39,6 @@ class UserSingleton{
     }()
     private init(){
         self.user = nil
+        print("HERE")
     }
 }

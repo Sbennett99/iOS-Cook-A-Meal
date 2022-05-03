@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F54FAF42811E8A8001E90A8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54FAF32811E8A8001E90A8 /* LoginVC.swift */; };
 		3F54FAF62811E8C0001E90A8 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54FAF52811E8C0001E90A8 /* RegisterVC.swift */; };
+		3FB1E2242821849400892A4B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB1E2232821849400892A4B /* CoreData.framework */; };
 		3FB49DB5280B933A00AF958D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DB4280B933A00AF958D /* AppDelegate.swift */; };
 		3FB49DB7280B933A00AF958D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DB6280B933A00AF958D /* SceneDelegate.swift */; };
 		3FB49DB9280B933A00AF958D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DB8280B933A00AF958D /* ViewController.swift */; };
@@ -58,6 +59,7 @@
 /* Begin PBXFileReference section */
 		3F54FAF32811E8A8001E90A8 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3F54FAF52811E8C0001E90A8 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		3FB1E2232821849400892A4B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3FB49DB1280B933A00AF958D /* iOS-Group-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Group-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB49DB4280B933A00AF958D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FB49DB6280B933A00AF958D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB1E2242821849400892A4B /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +119,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FB1E2222821849400892A4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FB1E2232821849400892A4B /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3FB49DA8280B933900AF958D = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +142,7 @@
 				3FB49DCD280B934200AF958D /* iOS-Group-ProjectTests */,
 				3FB49DD7280B934200AF958D /* iOS-Group-ProjectUITests */,
 				3FB49DB2280B933A00AF958D /* Products */,
+				3FB1E2222821849400892A4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
