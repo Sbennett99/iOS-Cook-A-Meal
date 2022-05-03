@@ -73,7 +73,6 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="LoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YDt-hk-y2O"/>
-                                            <segue destination="vzZ-sI-tL3" kind="show" identifier="Login" id="wQG-6s-PVV"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xXy-Gk-jah">
@@ -128,11 +127,12 @@
                         <outlet property="passwordTF" destination="f79-bu-vWM" id="fV7-cK-oTp"/>
                         <outlet property="titleLBL" destination="cYM-P4-Hrv" id="ukv-3i-uo1"/>
                         <outlet property="usernameTF" destination="ywy-R9-y4m" id="9sb-zS-L9B"/>
+                        <segue destination="vzZ-sI-tL3" kind="show" identifier="LoginUser" id="L6B-rV-xsx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="83.705357142857139"/>
+            <point key="canvasLocation" x="845" y="84"/>
         </scene>
         <!--User-->
         <scene sceneID="OCX-6S-s7W">
@@ -696,7 +696,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mv2-48-qK6">
                                                                 <rect key="frame" x="0.0" y="0.0" width="136.5" height="159"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Adiddas"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Adidas"/>
                                                                 <connections>
                                                                     <action selector="searchAdiddas:" destination="52X-Go-zrJ" eventType="touchUpInside" id="Udc-M6-he1"/>
                                                                 </connections>
@@ -736,7 +736,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="C8u-Nh-QZN">
                                                         <rect key="frame" x="0.0" y="0.0" width="159.5" height="158.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3a-ac-6DH">
+                                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3a-ac-6DH">
                                                                 <rect key="frame" x="0.0" y="0.0" width="106.5" height="158.5"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Running"/>
@@ -755,7 +755,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="0Kf-ny-0u3">
                                                         <rect key="frame" x="0.0" y="166.5" width="159.5" height="159"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pd2-xx-e7E">
+                                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pd2-xx-e7E">
                                                                 <rect key="frame" x="0.0" y="0.0" width="100.5" height="159"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Hiking"/>
@@ -774,7 +774,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="SKd-WR-ZAG">
                                                         <rect key="frame" x="0.0" y="333.5" width="159.5" height="158.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZ3-FE-mf2">
+                                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZ3-FE-mf2">
                                                                 <rect key="frame" x="0.0" y="0.0" width="106.5" height="158.5"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="workout"/>
@@ -827,6 +827,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="adidaCheckbox" destination="qhM-Vq-IEI" id="R9l-G6-2c5"/>
+                        <outlet property="nikeCheckbox" destination="Brx-bo-Z8r" id="Zs8-ht-I7v"/>
+                        <outlet property="pumaCheckbox" destination="dMj-Dg-blt" id="rPt-3f-I8S"/>
                         <outlet property="searchFilterLabel" destination="Kfa-Q7-I4u" id="WuH-Mx-qEy"/>
                         <segue destination="CPZ-OT-p8q" kind="show" identifier="SearchDetail" id="uwn-ou-AFb"/>
                         <segue destination="mzP-R5-SC4" kind="show" identifier="addShoe" id="sKd-16-jcR"/>
@@ -1360,7 +1363,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" destinationCreationSelector="home" id="rDt-Xe-NyS"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tZY-dN-b8H"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ioj-e4-HhC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1369,7 +1372,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="biK-tg-dyy"/>
+        <segue reference="L6B-rV-xsx"/>
         <segue reference="Vme-lw-Lg8"/>
     </inferredMetricsTieBreakers>
     <resources>

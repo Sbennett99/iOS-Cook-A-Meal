@@ -24,7 +24,7 @@ class LoginVC: UIViewController {
                 if user != nil{
                     if(user?.password == pwd){
                         userOut = user
-                        performSegue(withIdentifier: "Login", sender: sender)
+                        performSegue(withIdentifier: "LoginUser", sender: sender)
                     }else{
                         invalTxt.isHidden = false
                     }
@@ -43,20 +43,21 @@ class LoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Here")
         self.fetchStudentRecords()
         titleLBL.text = ""
-        var index = 0.0
-        let text = "🛑One-Stop"
-        for i in text{
-            Timer.scheduledTimer(withTimeInterval: 0.2 * index, repeats: false) { (animateText) in
-                self.titleLBL.text?.append(i)
-            }
-            index = index+1
-            
+        //var index = 0.0
+        //let text = "🛑One-Stop"
+//        for i in text{
+//            Timer.scheduledTimer(withTimeInterval: 0.2 * index, repeats: false) { (animateText) in
+//                self.titleLBL.text?.append(i)
+//            }
+//            index = index+1
+//
         }
 
         // Do any additional setup after loading the view.
-    }
+    
     private func fetchStudentRecords(){
         
         let request: NSFetchRequest<User> = User.fetchRequest()
@@ -81,7 +82,7 @@ class LoginVC: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "Login"{
+        if segue.identifier == "LoginUser"{
             UserSingleton._UserSingleton.user = userOut
         }
         // Get the new view controller using segue.destination.

@@ -9,6 +9,10 @@ import UIKit
 import CoreData
 
 class SearchVC: UIViewController{
+    var nike = false
+    var adidas = false
+    var puma = false
+    
     
     var fetchResultsController:NSFetchedResultsController<Shoe>?
     override func viewDidLoad() {
@@ -35,28 +39,60 @@ class SearchVC: UIViewController{
     
     
     @IBAction func SearchNike(_ sender: UIButton) {
+        nike = !nike
+        
+        
+        if nike{
+            nikeCheckbox.text = "🟩"
+        }else{
+            nikeCheckbox.text = "⬜️"
+        }
     }
     
     
     @IBAction func searchRunning(_ sender: UIButton) {
+        // not implemented
     }
     
-    @IBAction func searchAdiddas(_ sender: UIButton) {
+    @IBAction func searchAdidas(_ sender: UIButton) {
+        adidas = !adidas
+        
+        
+        if adidas{
+            adidasCheckbox.text = "🟩"
+        }else{
+            adidasCheckbox.text = "⬜️"
+        }
     }
     
     
     @IBAction func searchHiking(_ sender: UIButton) {
+        // not implemented
     }
+        
     
     @IBAction func searchPuma(_ sender: UIButton) {
+        puma = !puma
+        
+        
+        if puma{
+            pumaCheckbox.text = "🟩"
+        }else{
+            pumaCheckbox.text = "⬜️"
+        }
     }
     
     
     @IBAction func searchWorkout(_ sender: UIButton) {
-        
+        // not implemented
     }
         
+    @IBOutlet weak var nikeCheckbox: UILabel!
     
+    @IBOutlet weak var adidasCheckbox: UILabel!
+    
+    
+    @IBOutlet weak var pumaCheckbox: UILabel!
     
     
     private func fetchStudentRecords(){
