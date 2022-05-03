@@ -20,6 +20,17 @@
 		3FB49DDB280B934200AF958D /* iOS_Group_ProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DDA280B934200AF958D /* iOS_Group_ProjectUITestsLaunchTests.swift */; };
 		3FB49DE8281733CA00AF958D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DE7281733CA00AF958D /* Models.swift */; };
 		3FB49DED281CC76900AF958D /* iOS_Group_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DEB281CC76900AF958D /* iOS_Group_Project.xcdatamodeld */; };
+		3FB49DF6281CCA7F00AF958D /* PurchaseURL+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DEE281CCA7F00AF958D /* PurchaseURL+CoreDataClass.swift */; };
+		3FB49DF7281CCA7F00AF958D /* PurchaseURL+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DEF281CCA7F00AF958D /* PurchaseURL+CoreDataProperties.swift */; };
+		3FB49DF8281CCA7F00AF958D /* Color+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DF0281CCA7F00AF958D /* Color+CoreDataClass.swift */; };
+		3FB49DF9281CCA7F00AF958D /* Color+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DF1281CCA7F00AF958D /* Color+CoreDataProperties.swift */; };
+		3FB49DFA281CCA7F00AF958D /* Shoe+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DF2281CCA7F00AF958D /* Shoe+CoreDataClass.swift */; };
+		3FB49DFB281CCA7F00AF958D /* Shoe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DF3281CCA7F00AF958D /* Shoe+CoreDataProperties.swift */; };
+		3FB49DFC281CCA7F00AF958D /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DF4281CCA7F00AF958D /* User+CoreDataClass.swift */; };
+		3FB49DFD281CCA7F00AF958D /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49DF5281CCA7F00AF958D /* User+CoreDataProperties.swift */; };
+		3FB49E012820411700AF958D /* AddShoeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49E002820411700AF958D /* AddShoeVC.swift */; };
+		3FB49E05282076FF00AF958D /* ShoeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49E04282076FF00AF958D /* ShoeCell.swift */; };
+		3FB49E072820A05400AF958D /* SearchShoeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB49E062820A05400AF958D /* SearchShoeCell.swift */; };
 		D40CB5C928173CCF0045DC58 /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CB5C828173CCF0045DC58 /* UserVC.swift */; };
 		D40CB5CB28173E2A0045DC58 /* FeaturedPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CB5CA28173E2A0045DC58 /* FeaturedPageVC.swift */; };
 		D40CB5CD28173FD60045DC58 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CB5CC28173FD60045DC58 /* SearchVC.swift */; };
@@ -62,6 +73,17 @@
 		3FB49DE7281733CA00AF958D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		3FB49DE9281CC37000AF958D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FB49DEC281CC76900AF958D /* iOS_Group_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_Group_Project.xcdatamodel; sourceTree = "<group>"; };
+		3FB49DEE281CCA7F00AF958D /* PurchaseURL+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PurchaseURL+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3FB49DEF281CCA7F00AF958D /* PurchaseURL+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PurchaseURL+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3FB49DF0281CCA7F00AF958D /* Color+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3FB49DF1281CCA7F00AF958D /* Color+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3FB49DF2281CCA7F00AF958D /* Shoe+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shoe+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3FB49DF3281CCA7F00AF958D /* Shoe+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shoe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3FB49DF4281CCA7F00AF958D /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3FB49DF5281CCA7F00AF958D /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3FB49E002820411700AF958D /* AddShoeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShoeVC.swift; sourceTree = "<group>"; };
+		3FB49E04282076FF00AF958D /* ShoeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeCell.swift; sourceTree = "<group>"; };
+		3FB49E062820A05400AF958D /* SearchShoeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchShoeCell.swift; sourceTree = "<group>"; };
 		D40CB5C828173CCF0045DC58 /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
 		D40CB5CA28173E2A0045DC58 /* FeaturedPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPageVC.swift; sourceTree = "<group>"; };
 		D40CB5CC28173FD60045DC58 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
@@ -97,6 +119,14 @@
 		3FB49DA8280B933900AF958D = {
 			isa = PBXGroup;
 			children = (
+				3FB49DEE281CCA7F00AF958D /* PurchaseURL+CoreDataClass.swift */,
+				3FB49DEF281CCA7F00AF958D /* PurchaseURL+CoreDataProperties.swift */,
+				3FB49DF0281CCA7F00AF958D /* Color+CoreDataClass.swift */,
+				3FB49DF1281CCA7F00AF958D /* Color+CoreDataProperties.swift */,
+				3FB49DF2281CCA7F00AF958D /* Shoe+CoreDataClass.swift */,
+				3FB49DF3281CCA7F00AF958D /* Shoe+CoreDataProperties.swift */,
+				3FB49DF4281CCA7F00AF958D /* User+CoreDataClass.swift */,
+				3FB49DF5281CCA7F00AF958D /* User+CoreDataProperties.swift */,
 				3FB49DB3280B933A00AF958D /* iOS-Group-Project */,
 				3FB49DCD280B934200AF958D /* iOS-Group-ProjectTests */,
 				3FB49DD7280B934200AF958D /* iOS-Group-ProjectUITests */,
@@ -126,7 +156,10 @@
 				3FB49DB4280B933A00AF958D /* AppDelegate.swift */,
 				3FB49DB6280B933A00AF958D /* SceneDelegate.swift */,
 				3FB49DB8280B933A00AF958D /* ViewController.swift */,
+				3FB49E002820411700AF958D /* AddShoeVC.swift */,
 				3FB49DBA280B933A00AF958D /* Main.storyboard */,
+				3FB49E04282076FF00AF958D /* ShoeCell.swift */,
+				3FB49E062820A05400AF958D /* SearchShoeCell.swift */,
 				3F54FAF32811E8A8001E90A8 /* LoginVC.swift */,
 				3F54FAF52811E8C0001E90A8 /* RegisterVC.swift */,
 				3FB49DC0280B934200AF958D /* Assets.xcassets */,
@@ -300,15 +333,26 @@
 				3FB49DB9280B933A00AF958D /* ViewController.swift in Sources */,
 				3FB49DB5280B933A00AF958D /* AppDelegate.swift in Sources */,
 				3FB49DB7280B933A00AF958D /* SceneDelegate.swift in Sources */,
+				3FB49DFC281CCA7F00AF958D /* User+CoreDataClass.swift in Sources */,
+				3FB49E05282076FF00AF958D /* ShoeCell.swift in Sources */,
+				3FB49DF9281CCA7F00AF958D /* Color+CoreDataProperties.swift in Sources */,
 				D40CB5CF281741080045DC58 /* SearchDetailVC.swift in Sources */,
+				3FB49E072820A05400AF958D /* SearchShoeCell.swift in Sources */,
 				D40CB5D1281741930045DC58 /* DetailShoeVC.swift in Sources */,
 				3F54FAF62811E8C0001E90A8 /* RegisterVC.swift in Sources */,
+				3FB49DF6281CCA7F00AF958D /* PurchaseURL+CoreDataClass.swift in Sources */,
 				3F54FAF42811E8A8001E90A8 /* LoginVC.swift in Sources */,
 				3FB49DED281CC76900AF958D /* iOS_Group_Project.xcdatamodeld in Sources */,
 				D40CB5CD28173FD60045DC58 /* SearchVC.swift in Sources */,
 				3FB49DE8281733CA00AF958D /* Models.swift in Sources */,
 				D40CB5C928173CCF0045DC58 /* UserVC.swift in Sources */,
+				3FB49DF7281CCA7F00AF958D /* PurchaseURL+CoreDataProperties.swift in Sources */,
+				3FB49DFB281CCA7F00AF958D /* Shoe+CoreDataProperties.swift in Sources */,
+				3FB49DFA281CCA7F00AF958D /* Shoe+CoreDataClass.swift in Sources */,
 				D40CB5CB28173E2A0045DC58 /* FeaturedPageVC.swift in Sources */,
+				3FB49E012820411700AF958D /* AddShoeVC.swift in Sources */,
+				3FB49DFD281CCA7F00AF958D /* User+CoreDataProperties.swift in Sources */,
+				3FB49DF8281CCA7F00AF958D /* Color+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
